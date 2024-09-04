@@ -5,16 +5,356 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About</title>
     <link rel="stylesheet" href="/src/output.css" />
+    <link rel="stylesheet" href="main.css" />
+    <title>About US</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="shortcut icon" href="/img/logo1.png" type="" />
   </head>
   <body>
-    <div class="Loging">
-      <label for="fname">Fist Name</label> <br />
-      <input
-        class="w-28 h-7 border border-r-indigo-400"
-        type="text"
-        name=""
-        id=""
-      />
-    </div>
+    <header>
+      <div
+        class="bg-[#0B3B5E] w-full h-20 flex justify-between items-center px-4 lg:px-32 fixed top-0 left-0 z-50"
+      >
+        <div class="logo flex items-center">
+          <div class="Logo h-14 w-14 rounded-full overflow-hidden">
+            <img
+              class="object-cover h-full w-full"
+              src="/img/logo1.png"
+              alt="Logo"
+            />
+          </div>
+          <div class="title ml-2 lg:ml-[10px] text-white text-lg lg:text-xl">
+            Enjoy Movie
+          </div>
+        </div>
+        <nav class="hidden lg:flex space-x-8">
+          <a href="index.html" class="text-white hover:text-gray-300">Home</a>
+          <a href="detail.html" class="text-white hover:text-gray-300">Movie</a>
+          <a href="about.html" class="text-white hover:text-gray-300">About</a>
+        </nav>
+        <div class="flex items-center space-x-4 text-white">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-regular fa-user"></i>
+          <i class="fa-solid fa-right-to-bracket"></i>
+        </div>
+      </div>
+    </header>
+
+    <main class="bg-[#233d4d]">
+      <!-- section1 -->
+      <h2
+        class="font-bold text-5xl flex justify-center pt-[100px] text-[#5fa8d3]"
+      >
+        What is our mission?
+      </h2>
+      <section class="w-full flex justify-center px-4 content-center">
+        <div
+          class="w-full lg:w-1/2 flex flex-col lg:flex-row justify-between items-center"
+        >
+          <div class="w-full lg:w-4/5 flex flex-col mx-4 lg:mx-12 mb-8 lg:mb-0 ">
+            <div class="w-full">
+              <p class="text-[#b9d6f2] text-left text-lg">
+                This Website is created for people who love watching Anime,
+                Disney, K-drama, C-drama, or Hollywood movies. They can come
+                here and feel free to enjoy watching. The founder is Marinet,
+                who has received a lot of support from her friends to make this.
+              </p>
+            </div>
+          </div>
+          <div
+            class="w-full lg:w-auto pt-[50px] lg:pt-[100px] flex justify-center"
+          >
+            <img
+              class="rounded-[16px] max-w-full h-auto"
+              src="/img/about 4.jpg"
+              alt="About Us Image"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- section2 -->
+      <section>
+        <div class="Section3 w-full h-auto p-6 flex flex-col items-center">
+          <!-- Letter Section -->
+          <div class="Letter max-w-3xl text-center mb-8">
+            <h1
+              class="text-[#5fa8d3] text-5xl md:text-4xl sm:text-3xl font-bold mb-4"
+            >
+              Meet our team
+            </h1>
+            <p
+              class="text-[#b9d6f2] text-lg md:text-base sm:text-sm font-medium"
+            >
+              Our philosophy is simple — hire a team of diverse, passionate
+              people and foster a culture that empowers you to do your best
+              work.
+            </p>
+          </div>
+
+          <!-- Card Section -->
+          <div
+            class="CardDetail w-full flex flex-wrap gap-5 justify-center m-auto"
+          >
+            <!-- Card 1 -->
+            <div
+              class="relative w-72 h-96 bg-gray-900 rounded-2xl overflow-hidden shadow-lg flex-shrink-0"
+            >
+              <img
+                class="w-full h-full object-cover rounded-2xl"
+                src="/img/about 1.jpg"
+                alt="Jake"
+              />
+              <div
+                class="absolute bottom-0 w-full h-1/2 bg-gradient-to-t from-black to-transparent rounded-bl-2xl rounded-br-2xl p-4 flex flex-col justify-end"
+              >
+                <h2 class="text-[#5787daf7] text-xl font-medium">Jake</h2>
+                <p class="text-[#b9d6f2] text-base font-medium">Founder</p>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div
+              class="relative w-72 h-96 bg-gray-900 rounded-2xl overflow-hidden shadow-lg flex-shrink-0"
+            >
+              <img
+                class="w-full h-full object-cover rounded-2xl"
+                src="/img/about 2.jpg"
+                alt="manager"
+              />
+              <div
+                class="absolute bottom-0 w-full h-1/2 bg-gradient-to-t from-black to-transparent rounded-bl-2xl rounded-br-2xl p-4 flex flex-col justify-end"
+              >
+                <h2 class="text-[#5787daf7] text-xl font-medium">Heesoung</h2>
+                <p class="text-[#b9d6f2] text-base font-medium">Manager</p>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div
+              class="relative w-72 h-96 bg-gray-900 rounded-2xl overflow-hidden shadow-lg flex-shrink-0"
+            >
+              <img
+                class="w-full h-full object-cover rounded-2xl"
+                src="/img/about 3.jpg"
+                alt="Jungwon"
+              />
+              <div
+                class="absolute bottom-0 w-full h-1/2 bg-gradient-to-t from-black to-transparent rounded-bl-2xl rounded-br-2xl p-4 flex flex-col justify-end"
+              >
+                <h2 class="text-[#5787daf7] text-xl font-medium">Jungwon</h2>
+                <p class="text-[#b9d6f2] text-base font-medium">Leader</p>
+              </div>
+            </div>
+            <!-- Card 4 -->
+            <div
+              class="relative w-72 h-96 bg-gray-900 rounded-2xl overflow-hidden shadow-lg flex-shrink-0"
+            >
+              <img
+                class="w-full h-full object-cover rounded-2xl"
+                src="/img/about 5.jpg"
+                alt="Jay"
+              />
+              <div
+                class="absolute bottom-0 w-full h-1/2 bg-gradient-to-t from-black to-transparent rounded-bl-2xl rounded-br-2xl p-4 flex flex-col justify-end"
+              >
+                <h2 class="text-[#5787daf7] text-xl font-medium">Jay Park</h2>
+                <p class="text-[#b9d6f2] text-base font-medium">Leader</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- section3 -->
+      <section
+        class="w-full flex flex-col md:flex-row justify-between items-center p-8 md:p-[50px] lg:p-[100px] xl:p-[150px]"
+      >
+        <div
+          id="contact-us"
+          class="overflow-hidden bg-[#233d4d] py-8 px-4 w-full md:w-1/2 lg:px-8 lg:py-16"
+        >
+          <div class="relative mx-auto max-w-xl">
+            <svg
+              class="absolute left-full translate-x-1/2 transform"
+              width="404"
+              height="404"
+              fill="none"
+              viewBox="0 0 404 404"
+              aria-hidden="true"
+            >
+              <defs>
+                <pattern
+                  id="85737c0e-0916-41d7-917f-596dc7edfa27"
+                  x="0"
+                  y="0"
+                  width="20"
+                  height="20"
+                  patternUnits="userSpaceOnUse"
+                >
+                  <rect
+                    x="0"
+                    y="0"
+                    width="4"
+                    height="4"
+                    class="text-gray-500"
+                    fill="currentColor"
+                  ></rect>
+                </pattern>
+              </defs>
+              <rect
+                width="404"
+                height="404"
+                fill="url(#85737c0e-0916-41d7-917f-596dc7edfa27)"
+              ></rect>
+            </svg>
+            <svg
+              class="absolute right-full bottom-0 -translate-x-1/2 transform"
+              width="404"
+              height="404"
+              fill="none"
+              viewBox="0 0 404 404"
+              aria-hidden="true"
+            >
+              <defs>
+                <pattern
+                  id="85737c0e-0916-41d7-917f-596dc7edfa27"
+                  x="0"
+                  y="0"
+                  width="20"
+                  height="20"
+                  patternUnits="userSpaceOnUse"
+                >
+                  <rect
+                    x="0"
+                    y="0"
+                    width="4"
+                    height="4"
+                    class="text-gray-500"
+                    fill="currentColor"
+                  ></rect>
+                </pattern>
+              </defs>
+              <rect
+                width="404"
+                height="404"
+                fill="url(#85737c0e-0916-41d7-917f-596dc7edfa27)"
+              ></rect>
+            </svg>
+            <div class="text-center">
+              <h2
+                class="text-3xl font-extrabold tracking-tight text-[#5fa8d3] sm:text-4xl"
+              >
+                Contact Us
+              </h2>
+              <p class="mt-4 text-lg leading-6 text-[#b9d6f2]">
+                Please use the form below to contact us. Thank you!
+              </p>
+            </div>
+            <div class="mt-8 lg:mt-12">
+              <form class="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
+                <div class="sm:col-span-2">
+                  <label
+                    for="name"
+                    class="block text-sm font-medium text-[#b9d6f2]"
+                    >Name</label
+                  >
+                  <div class="mt-1">
+                    <input
+                      name="name"
+                      type="text"
+                      id="name"
+                      autocomplete="organization"
+                      required=""
+                      class="border border-gray-300 block w-full rounded-[16px] py-3 px-4 shadow-sm"
+                    />
+                  </div>
+                </div>
+                <div class="sm:col-span-2">
+                  <label
+                    for="email"
+                    class="block text-sm font-medium text-[#b9d6f2]"
+                    >Email</label
+                  >
+                  <div class="mt-1">
+                    <input
+                      name="email"
+                      id="email"
+                      required=""
+                      type="email"
+                      autocomplete="email"
+                      class="border border-gray-300 block w-full rounded-[16px] py-3 px-4 shadow-sm "
+                    />
+                  </div>
+                </div>
+                <div class="sm:col-span-2">
+                  <label
+                    for="message"
+                    class="block text-sm font-medium text-[#b9d6f2]"
+                    >Message</label
+                  >
+                  <div class="mt-1">
+                    <textarea
+                      required=""
+                      name="message"
+                      id="message"
+                      rows="4"
+                      class="border border-gray-500 block w-full rounded-[16px] py-3 px-4 shadow-sm "
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="flex justify-end sm:col-span-2">
+                  <button
+                    type="submit"
+                    class="inline-flex items-center rounded-md px-4 py-2 font-medium focus:outline-none focus-visible:ring focus-visible:ring-sky-400 shadow-sm sm:text-sm transition-colors duration-75 text-[#b9d6f2] border border-sky-500 hover:bg-[#006daa] active:bg-[#006daa] disabled:bg-sky-100 disabled:cursor-not-allowed"
+                  >
+                    <span>Send Message</span>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="mt-8 md:mt-0 w-full md:w-1/2 lg:w-[40%]">
+          <img
+            src="/img/about 7.jpg"
+            class="object-cover w-full rounded-[16px]"
+            alt=""
+          />
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer class="bg-[#0B3B5E]">
+      <div class="max-w-screen-xl mx-auto p-4 md:py-8 text-[#eff1f3]">
+        <div
+          class="flex flex-col sm:flex-row sm:items-center sm:justify-between"
+        >
+          <a
+            href="https://flowbite.com/"
+            class="flex items-center mb-4 sm:mb-0"
+          >
+            <img src="/img/logo1.png" class="h-14" alt="Flowbite Logo" />
+            <span class="ml-3 text-lg font-semibold">Enjoy Movie</span>
+          </a>
+          <ul
+            class="flex flex-wrap items-center mb-6 text-sm font-medium space-x-4 sm:space-x-6"
+          >
+            <li><a href="#" class="hover:underline">About</a></li>
+            <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+            <li><a href="#" class="hover:underline">Licensing</a></li>
+            <li><a href="#" class="hover:underline">Contact</a></li>
+          </ul>
+        </div>
+        <hr class="my-6 border-gray-200" />
+        <span class="block text-sm text-center"
+          >© 2024
+          <a href="https://flowbite.com/" class="hover:underline"
+            >Enjoy Movie™</a
+          >. All Rights Reserved.</span
+        >
+      </div>
+    </footer>
   </body>
 </html>

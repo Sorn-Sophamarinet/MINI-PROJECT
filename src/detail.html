@@ -10,78 +10,69 @@
     />
     <link rel="stylesheet" href="output.css" />
     <link rel="stylesheet" href="main.css" />
-    <title>Enjoy Movie</title>
+    <title> Detail</title>
   </head>
   <body class="bg-[#233d4d]">
     <!-- header -->
     <header>
-      <div class="bg-[#0B3B5E] w-auto h-20 flex justify-between pl-32">
-        <div class="logo flex">
-          <div class="Logo h-14 w-14 rounded-full -[10ml0px]">
+      <div
+        class="bg-[#0B3B5E] w-full h-20 flex justify-between items-center px-4 lg:px-32 fixed top-0 left-0 z-50"
+      >
+        <div class="logo flex items-center">
+          <div class="Logo h-14 w-14 rounded-full overflow-hidden">
             <img
-              class="object-cover rounded-full h-14 w-14"
-              src="/img/logo1.png "
-              alt=""
+              class="object-cover h-full w-full"
+              src="/img/logo1.png"
+              alt="Logo"
             />
           </div>
-          <div class="title ml-[10px] mt-[12px] text-white">Enjoy Movie</div>
-        </div>
-        <div class="menu w-[500px] ml-[200px]">
-          <ul class="flex justify-evenly mt-6 text-white">
-            <li>
-              <a href="">Home</a>
-            </li>
-            <li>
-              <a href="">Movie</a>
-            </li>
-            <li>
-              <a href="">About</a>
-            </li>
-          </ul>
-        </div>
-        <div class="menu w-[500px] flex pl-[240px]">
-          <div class="icon mt-6 text-white">
-            <i class="fa-solid fa-magnifying-glass pl-6"></i>
-            <i class="fa-regular fa-user pl-6"></i>
-            <i class="fa-solid fa-right-to-bracket pl-6"></i>
+          <div class="title ml-2 lg:ml-[10px] text-white text-lg lg:text-xl">
+            Enjoy Movie
           </div>
+        </div>
+        <nav class="hidden lg:flex space-x-8">
+          <a href="index.html" class="text-white hover:text-gray-300">Home</a>
+          <a href="detail.html" class="text-white hover:text-gray-300">Movie</a>
+          <a href="about.html" class="text-white hover:text-gray-300">About</a>
+        </nav>
+        <div class="flex items-center space-x-4 text-white">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-regular fa-user"></i>
+          <i class="fa-solid fa-right-to-bracket"></i>
         </div>
       </div>
     </header>
+    
     <main>
       <!-- sec1 -->
-      <section>
-        <div class="sec h-[650px] relative">
-          <button
-            class="w-[120px] h-[36px] bg-blue-600 absolute top-[50%] right-[720px] rounded-[12px]"
-          >
+      <section class="pt-20 md:pt-0">
+        <div class="sec h-[400px] md:h-[650px] relative">
+          <button class="w-[100px] md:w-[120px] h-[35px] md:h-[40px] bg-[#006daa] text-[#b9d6f2] font-bold absolute top-[50%] left-1/2 transform -translate-x-1/2 md:right-[720px] rounded-[10px] md:rounded-[12px] text-xs md:text-sm">
             Watch Now!
           </button>
-          <img
-            class="img h-[100%] w-[100%] m-auto"
-            src="/img/harry potter.jpg"
-            alt=""
-          />
+          <img class="img h-full w-full object-cover" src="/img/harry potter.jpg" alt="Harry Potter" />
         </div>
       </section>
+    </main>
       <!-- sec2 -->
-      <h2 class="text-4xl text-center">Movie Of The Day</h2>
+      <h2 class="text-4xl text-center p-5 font-medium text-[#5fa8d3]">Movie Of The Day</h2>
       <div
-        class="Card grid grid-cols-1 md:grid-cols-4 lg:grid-cols-5 gap-4 px-[120px]"
+        class="Card grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 px-[120px]"
       >
         <!-- Repeat this block for each card -->
+         <!-- card1 -->
         <div class="Card-item h-[380px] drop-shadow-lg border">
           <div class="img rounded-[12px]">
             <img
-              class="rounded-[8px] h-[300px] w-full"
-              src="/img/raya.png"
+              class="rounded-[8px] h-[300px] w-full transform transition-transform duration-200 hover:scale-95"
+              src="/img/rayaa.webp"
               alt="Raya"
             />
           </div>
-          <div class="text text-[16px] font-medium pt-1 flex-col p-2">
+          <div class="text text-[16px] font-medium pt-1 flex-col p-2 text-[#b9d6f2]">
             RAYA <br />
             <small>
-              <i class="fa-regular fa-clock"></i> 2:45mn |
+              <i class="fa-regular fa-clock"></i> 4h:45mn |
               <i class="fa-regular fa-eye"></i> Action <br />
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
@@ -91,19 +82,19 @@
             </small>
           </div>
         </div>
-
+          <!-- card2 -->
         <div class="Card-item h-[380px] drop-shadow-lg border">
           <div class="img rounded-[12px]">
             <img
-              class="rounded-[8px] h-[300px] w-full"
-              src="/img/raya.png"
-              alt="Raya"
+              class="rounded-[8px] h-[300px] w-full transform transition-transform duration-200 hover:scale-95"
+              src="/img/moana.jpeg"
+              alt="moana"
             />
           </div>
-          <div class="text text-[16px] font-medium pt-1 flex-col p-2">
-            RAYA <br />
+          <div class="text text-[16px] font-medium pt-1 flex-col p-2 text-[#b9d6f2]">
+            Moana <br />
             <small>
-              <i class="fa-regular fa-clock"></i> 2:45mn |
+              <i class="fa-regular fa-clock"></i> 2h:30mn |
               <i class="fa-regular fa-eye"></i> Action <br />
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
@@ -113,19 +104,19 @@
             </small>
           </div>
         </div>
-
+          <!-- card3 -->
         <div class="Card-item h-[380px] drop-shadow-lg border">
           <div class="img rounded-[12px]">
             <img
-              class="rounded-[8px] h-[300px] w-full"
-              src="/img/raya.png"
-              alt="Raya"
+              class="rounded-[8px] h-[300px] w-full transform transition-transform duration-200 hover:scale-95"
+              src="/img/princess.jpg"
+              alt="prince"
             />
           </div>
-          <div class="text text-[16px] font-medium pt-1 flex-col p-2">
-            RAYA <br />
+          <div class="text text-[16px] font-medium pt-1 flex-col p-2 text-[#b9d6f2]">
+            Princess<br />
             <small>
-              <i class="fa-regular fa-clock"></i> 2:45mn |
+              <i class="fa-regular fa-clock"></i> 2h:45mn |
               <i class="fa-regular fa-eye"></i> Action <br />
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
@@ -135,19 +126,19 @@
             </small>
           </div>
         </div>
-
+         <!-- card4 -->
         <div class="Card-item h-[380px] drop-shadow-lg border">
           <div class="img rounded-[12px]">
             <img
-              class="rounded-[8px] h-[300px] w-full"
-              src="/img/raya.png"
-              alt="Raya"
+              class="rounded-[8px] h-[300px] w-full transform transition-transform duration-200 hover:scale-95"
+              src="/img/lazy girl.jpg"
+              alt="lazygirl"
             />
           </div>
-          <div class="text text-[16px] font-medium pt-1 flex-col p-2">
-            RAYA <br />
+          <div class="text text-[16px] font-medium pt-1 flex-col p-2 text-[#b9d6f2]">
+            The Lazy girl <br />
             <small>
-              <i class="fa-regular fa-clock"></i> 2:45mn |
+              <i class="fa-regular fa-clock"></i> 1h:45mn |
               <i class="fa-regular fa-eye"></i> Action <br />
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
@@ -157,19 +148,19 @@
             </small>
           </div>
         </div>
-
+        <!-- card5 -->
         <div class="Card-item h-[380px] drop-shadow-lg border">
           <div class="img rounded-[12px]">
             <img
-              class="rounded-[8px] h-[300px] w-full"
-              src="/img/raya.png"
-              alt="Raya"
+              class="rounded-[8px] h-[300px] w-full transform transition-transform duration-200 hover:scale-95"
+              src="/img/scary.jpg"
+              alt="scary"
             />
           </div>
-          <div class="text text-[16px] font-medium pt-1 flex-col p-2">
-            RAYA <br />
+          <div class="text text-[16px] font-medium pt-1 flex-col p-2 text-[#b9d6f2]">
+            The Scary <br />
             <small>
-              <i class="fa-regular fa-clock"></i> 2:45mn |
+              <i class="fa-regular fa-clock"></i> 1h:45mn |
               <i class="fa-regular fa-eye"></i> Action <br />
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
@@ -179,19 +170,19 @@
             </small>
           </div>
         </div>
-
+        <!-- card6 -->
         <div class="Card-item h-[380px] drop-shadow-lg border">
           <div class="img rounded-[12px]">
             <img
-              class="rounded-[8px] h-[300px] w-full"
-              src="/img/raya.png"
-              alt="Raya"
+              class="rounded-[8px] h-[300px] w-full transform transition-transform duration-200 hover:scale-95"
+              src="/img/dune.jpg"
+              alt="dune"
             />
           </div>
-          <div class="text text-[16px] font-medium pt-1 flex-col p-2">
-            RAYA <br />
+          <div class="text text-[16px] font-medium pt-1 flex-col p-2 text-[#b9d6f2]">
+            Dune <br />
             <small>
-              <i class="fa-regular fa-clock"></i> 2:45mn |
+              <i class="fa-regular fa-clock"></i> 2h:35mn |
               <i class="fa-regular fa-eye"></i> Action <br />
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
@@ -201,19 +192,19 @@
             </small>
           </div>
         </div>
-
+         <!-- card7 -->
         <div class="Card-item h-[380px] drop-shadow-lg border">
           <div class="img rounded-[12px]">
             <img
-              class="rounded-[8px] h-[300px] w-full"
-              src="/img/raya.png"
-              alt="Raya"
+              class="rounded-[8px] h-[300px] w-full transform transition-transform duration-200 hover:scale-95"
+              src="/img/cropse.jpg"
+              alt="cropse"
             />
           </div>
-          <div class="text text-[16px] font-medium pt-1 flex-col p-2">
-            RAYA <br />
+          <div class="text text-[16px] font-medium pt-1 flex-col p-2 text-[#b9d6f2]">
+            The Cropse<br />
             <small>
-              <i class="fa-regular fa-clock"></i> 2:45mn |
+              <i class="fa-regular fa-clock"></i> 2h:20mn |
               <i class="fa-regular fa-eye"></i> Action <br />
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
@@ -223,19 +214,19 @@
             </small>
           </div>
         </div>
-
+          <!-- card8 -->
         <div class="Card-item h-[380px] drop-shadow-lg border">
           <div class="img rounded-[12px]">
             <img
-              class="rounded-[8px] h-[300px] w-full"
-              src="/img/raya.png"
-              alt="Raya"
+              class="rounded-[8px] h-[300px] w-full transform transition-transform duration-200 hover:scale-95"
+              src="/img/haikayuu.jpg"
+              alt="Haiikayu"
             />
           </div>
-          <div class="text text-[16px] font-medium pt-1 flex-col p-2">
-            RAYA <br />
+          <div class="text text-[16px] font-medium pt-1 flex-col p-2 text-[#b9d6f2]">
+            Haikayuu<br />
             <small>
-              <i class="fa-regular fa-clock"></i> 2:45mn |
+              <i class="fa-regular fa-clock"></i> 3h:40mn |
               <i class="fa-regular fa-eye"></i> Action <br />
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
@@ -245,19 +236,19 @@
             </small>
           </div>
         </div>
-
+          <!-- card9 -->
         <div class="Card-item h-[380px] drop-shadow-lg border">
           <div class="img rounded-[12px]">
             <img
-              class="rounded-[8px] h-[300px] w-full"
-              src="/img/raya.png"
-              alt="Raya"
+              class="rounded-[8px] h-[300px] w-full transform transition-transform duration-200 hover:scale-95"
+              src="/img/blue - Copy.jpg"
+              alt="bluelock"
             />
           </div>
-          <div class="text text-[16px] font-medium pt-1 flex-col p-2">
-            RAYA <br />
+          <div class="text text-[16px] font-medium pt-1 flex-col p-2 text-[#b9d6f2]">
+            The Bluelock <br />
             <small>
-              <i class="fa-regular fa-clock"></i> 2:45mn |
+              <i class="fa-regular fa-clock"></i> 2h:50mn |
               <i class="fa-regular fa-eye"></i> Action <br />
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
@@ -267,19 +258,19 @@
             </small>
           </div>
         </div>
-
+          <!-- card10 -->
         <div class="Card-item h-[380px] drop-shadow-lg border">
           <div class="img rounded-[12px]">
             <img
-              class="rounded-[8px] h-[300px] w-full"
-              src="/img/raya.png"
-              alt="Raya"
+              class="rounded-[8px] h-[300px] w-full transform transition-transform duration-200 hover:scale-95"
+              src="/img/the frog.webp"
+              alt="frog"
             />
           </div>
-          <div class="text text-[16px] font-medium pt-1 flex-col p-2">
-            RAYA <br />
+          <div class="text text-[16px] font-medium pt-1 flex-col p-2 text-[#b9d6f2]">
+            The Frog <br />
             <small>
-              <i class="fa-regular fa-clock"></i> 2:45mn |
+              <i class="fa-regular fa-clock"></i> 1h:30mn |
               <i class="fa-regular fa-eye"></i> Action <br />
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
@@ -289,19 +280,19 @@
             </small>
           </div>
         </div>
-
+         <!-- card11 -->
         <div class="Card-item h-[380px] drop-shadow-lg border">
           <div class="img rounded-[12px]">
             <img
-              class="rounded-[8px] h-[300px] w-full"
-              src="/img/raya.png"
-              alt="Raya"
+              class="rounded-[8px] h-[300px] w-full transform transition-transform duration-200 hover:scale-95"
+              src="/img/amaed.jpg"
+              alt="amaed"
             />
           </div>
-          <div class="text text-[16px] font-medium pt-1 flex-col p-2">
-            RAYA <br />
+          <div class="text text-[16px] font-medium pt-1 flex-col p-2 text-[#b9d6f2]">
+            Amaed<br />
             <small>
-              <i class="fa-regular fa-clock"></i> 2:45mn |
+              <i class="fa-regular fa-clock"></i> 5h:45mn |
               <i class="fa-regular fa-eye"></i> Action <br />
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
@@ -311,19 +302,19 @@
             </small>
           </div>
         </div>
-
+         <!-- card12 -->
         <div class="Card-item h-[380px] drop-shadow-lg border">
           <div class="img rounded-[12px]">
             <img
-              class="rounded-[8px] h-[300px] w-full"
-              src="/img/raya.png"
-              alt="Raya"
+              class="rounded-[8px] h-[300px] w-full transform transition-transform duration-200 hover:scale-95"
+              src="/img/mulan.jpeg"
+              alt="mulan"
             />
           </div>
-          <div class="text text-[16px] font-medium pt-1 flex-col p-2">
-            RAYA <br />
+          <div class="text text-[16px] font-medium pt-1 flex-col p-2 text-[#b9d6f2]">
+            Mulan<br />
             <small>
-              <i class="fa-regular fa-clock"></i> 2:45mn |
+              <i class="fa-regular fa-clock"></i> 2h:40mn |
               <i class="fa-regular fa-eye"></i> Action <br />
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
@@ -333,19 +324,19 @@
             </small>
           </div>
         </div>
-
+          <!-- card13 -->
         <div class="Card-item h-[380px] drop-shadow-lg border">
           <div class="img rounded-[12px]">
             <img
-              class="rounded-[8px] h-[300px] w-full"
-              src="/img/raya.png"
-              alt="Raya"
+              class="rounded-[8px] h-[300px] w-full transform transition-transform duration-200 hover:scale-95"
+              src="/img/ger.jpg"
+              alt="avenger"
             />
           </div>
-          <div class="text text-[16px] font-medium pt-1 flex-col p-2">
-            RAYA <br />
+          <div class="text text-[16px] font-medium pt-1 flex-col p-2 text-[#b9d6f2]">
+            Avenger <br />
             <small>
-              <i class="fa-regular fa-clock"></i> 2:45mn |
+              <i class="fa-regular fa-clock"></i> 4h:30mn |
               <i class="fa-regular fa-eye"></i> Action <br />
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
@@ -355,19 +346,19 @@
             </small>
           </div>
         </div>
-
+           <!-- card14 -->
         <div class="Card-item h-[380px] drop-shadow-lg border">
           <div class="img rounded-[12px]">
             <img
-              class="rounded-[8px] h-[300px] w-full"
-              src="/img/raya.png"
-              alt="Raya"
+              class="rounded-[8px] h-[300px] w-full transform transition-transform duration-200 hover:scale-95"
+              src="/img/jumanji.jpg"
+              alt="jumamji"
             />
           </div>
-          <div class="text text-[16px] font-medium pt-1 flex-col p-2">
-            RAYA <br />
+          <div class="text text-[16px] font-medium pt-1 flex-col p-2 text-[#b9d6f2]">
+            The jumanji <br />
             <small>
-              <i class="fa-regular fa-clock"></i> 2:45mn |
+              <i class="fa-regular fa-clock"></i> 3h:45mn |
               <i class="fa-regular fa-eye"></i> Action <br />
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
@@ -377,16 +368,17 @@
             </small>
           </div>
         </div>
+        <!-- card15 -->
         <div class="Card-item h-[380px] drop-shadow-lg border">
           <div class="img rounded-[12px]">
             <img
-              class="rounded-[8px] h-[300px] w-full"
-              src="/img/raya.png"
-              alt="Raya"
+              class="rounded-[8px] h-[300px] w-full transform transition-transform duration-200 hover:scale-95"
+              src="/img/cinderella.jpeg"
+              alt="cinderella"
             />
           </div>
-          <div class="text text-[16px] font-medium pt-1 flex-col p-2">
-            RAYA <br />
+          <div class="text text-[16px] font-medium pt-1 flex-col p-2 text-[#b9d6f2]">
+            Cinderilla<br />
             <small>
               <i class="fa-regular fa-clock"></i> 2:45mn |
               <i class="fa-regular fa-eye"></i> Action <br />
@@ -399,8 +391,105 @@
           </div>
         </div>
       </div>
+      <!-- section3 -->
+      <div class="Section3 w-full h-auto p-6 flex flex-col items-center">
+        <!-- Letter Section -->
+        <div class="Letter max-w-3xl text-center mb-8 px-4">
+          <h1 class="text-[#5fa8d3] text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
+            Over 100K+ people trust Enjoy Movie
+          </h1>
+          <p class="text-[#b9d6f2] text-base sm:text-lg font-medium">
+            Get access to maintain your own custom personal lists, track what you've
+            seen, and search and filter for what to watch next—regardless
+          </p>
+        </div>
+      
+        <div class="CardDetail w-full max-w-3xl flex flex-col sm:flex-row gap-5 m-auto">
+          <!-- Card 1 -->
+          <div class="relative w-full sm:w-72 h-96 bg-gray-900 rounded-2xl overflow-hidden shadow-lg">
+            <img
+              class="w-full h-full object-cover rounded-2xl transform transition-transform duration-300 hover:scale-105"
+              src="/img/the frog.webp"
+              alt="The Frog"
+            />
+            <div
+              class="absolute bottom-0 w-full h-1/2 bg-gradient-to-t from-black to-transparent p-4 flex flex-col justify-end"
+            >
+              <h2 class="text-[#0054e5f7] text-lg sm:text-xl font-medium">The Frog</h2>
+              <p class="text-[#b9d6f2] text-sm sm:text-base font-medium">200k Rating</p>
+            </div>
+          </div>
+          
+          <!-- Card 2 -->
+          <div class="relative w-full sm:w-72 h-96 bg-gray-900 rounded-2xl overflow-hidden shadow-lg">
+            <img
+              class="w-full h-full object-cover rounded-2xl transform transition-transform duration-300 hover:scale-105"
+              src="/img/lock.jpg"
+              alt="The Bluelock"
+            />
+            <div
+              class="absolute bottom-0 w-full h-1/2 bg-gradient-to-t from-black to-transparent p-4 flex flex-col justify-end"
+            >
+              <h2 class="text-[#0054e5f7] text-lg sm:text-xl font-medium">The Bluelock</h2>
+              <p class="text-[#b9d6f2] text-sm sm:text-base font-medium">500k Rating</p>
+            </div>
+          </div>
+      
+          <!-- Card 3 -->
+          <div class="relative w-full sm:w-72 h-96 bg-gray-900 rounded-2xl overflow-hidden shadow-lg">
+            <img
+              class="w-full h-full object-cover rounded-2xl transform transition-transform duration-300 hover:scale-105"
+              src="/img/scary2.png"
+              alt="The scary2"
+            />
+            <div
+              class="absolute bottom-0 w-full h-1/2 bg-gradient-to-t from-black to-transparent p-4 flex flex-col justify-end"
+            >
+              <h2 class="text-[#0054e5f7] text-lg sm:text-xl font-medium">The scary2</h2>
+              <p class="text-[#b9d6f2] text-sm sm:text-base font-medium">100k Rating</p>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Button -->
+        <button
+          class="ButtonPrimaryWithIcon mt-8 bg-[#006daa] text-white rounded-3xl border-2 border-white px-6 py-2 flex justify-center items-center shadow-md hover:bg-[#005999] transition-colors duration-300"
+        >
+          <span class="text-center text-sm sm:text-base font-medium">See all reviews by our customers</span>
+        </button>
+      </div>
+      
     </main>
-    <!-- footer -->
-    <footer></footer>
-  </body>
+     <!-- footer -->
+  <footer class="bg-[#0B3B5E]">
+    <div class="max-w-screen-xl mx-auto p-4 md:py-8 text-[#eff1f3]">
+      <div
+        class="flex flex-col sm:flex-row sm:items-center sm:justify-between"
+      >
+        <a
+          href="https://flowbite.com/"
+          class="flex items-center mb-4 sm:mb-0"
+        >
+          <img src="/img/logo1.png" class="h-14" alt="Flowbite Logo" />
+          <span class="ml-3 text-lg font-semibold">Enjoy Movie</span>
+        </a>
+        <ul
+          class="flex flex-wrap items-center mb-6 text-sm font-medium space-x-4 sm:space-x-6"
+        >
+          <li><a href="#" class="hover:underline">About</a></li>
+          <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+          <li><a href="#" class="hover:underline">Licensing</a></li>
+          <li><a href="#" class="hover:underline">Contact</a></li>
+        </ul>
+      </div>
+      <hr class="my-6 border-gray-200" />
+      <span class="block text-sm text-center"
+        >© 2024
+        <a href="https://flowbite.com/" class="hover:underline"
+          >Enjoy Movie™</a
+        >. All Rights Reserved.</span
+      >
+    </div>
+  </footer>
+</body>
 </html>
